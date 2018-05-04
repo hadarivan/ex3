@@ -21,13 +21,14 @@ header,nav,aside,article,section,footer,main {
 /*----------------layout1---------------------*/
 header {
 	width:1000px;
-	height:126px;
+	height:183px;
 }
 nav {
 	width: 726px;
 	height: 58px;
 	background-color: #b94a48;
 	float: right;
+	margin-top:47px;
 }
 #logo {
 	width: 78px;
@@ -57,4 +58,45 @@ footer {
 	width:1000px;
 	height: 120px;
 	background-color: #d6d6d6;
+}
+
+ul {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #b94a48;
+}
+
+li {
+	width:242px;
+	height:58px;
+	float: left;
+	text-align:center;
+	color: #ffffff;
+}
+
+li a {
+	padding-top:20px;
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.selected {
+	height:58px;
+	background-color:#333333;
+}
+
+/* ----------------- boxes ------------------ */
+article {
+	position:absolute;
+	background-color:black;
+	opacity: 0.6;
+}
+
+#box1 {
+	top:89px;
+	left:343px;
+	width:127px;
+	height:95px;
 }
