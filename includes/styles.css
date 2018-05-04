@@ -39,6 +39,16 @@ nav {
 	display:block;
 	margin-left:105px;
 }
+
+
+main {
+	position:relative;
+	top:269px;
+	width:878px;
+	height:223px;
+	margin-left:121px;
+}
+
 aside {
 	width: 121px;
 	height: 698px;
@@ -99,4 +109,11 @@ article {
 	left:343px;
 	width:127px;
 	height:95px;
+}
+
+#box2 {
+	top:223px;
+	left:97px;
+	width:693px;
+	height:176px;
 }
