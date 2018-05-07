@@ -179,7 +179,8 @@ article {
 }
 
 #footer2 {
-	position: relative;
+	position: fixed;
+	top:736px;
 	width:1000px;
 	height:50px;
 	background-color:#d6d6d6;
@@ -197,7 +198,7 @@ article {
 	top:384px;
 	left:32px;
 	width:212px;
-	height:500px;
+	height:373px;
 }
 
 #L2box3 {
@@ -210,7 +211,7 @@ article {
 	top:577px;
 	left:274px;
 	width:215px;
-	height:360px;
+	height:178px;
 }
 
 #L2box5 {
