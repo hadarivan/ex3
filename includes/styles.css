@@ -42,7 +42,7 @@ header,nav,aside,article,section,footer,main {
 }
 
 
-#Main1 {
+#Content1 {
 	position:relative;
 	top:269px;
 	width:878px;
@@ -170,7 +170,7 @@ article {
 	background-color:#b94a48;
 }
 
-#Main2 {
+#Content2 {
 	position:relative;
 	left:244px;
 	width:756px;
@@ -180,7 +180,7 @@ article {
 
 #footer2 {
 	position: fixed;
-	top:736px;
+	bottom:0px;
 	width:1000px;
 	height:50px;
 	background-color:#d6d6d6;
