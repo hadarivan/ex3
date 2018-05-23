@@ -1,7 +1,7 @@
 * {
-padding:0px;
-margin:0px;
-}
+	 padding:0px;
+	 margin:0px;
+ }
 header,nav,aside,article,section,footer,main {
 	display:block;
 }
@@ -10,6 +10,11 @@ header,nav,aside,article,section,footer,main {
 	width: 1000px;
 	height: 1000px;
 }
+
+@viewport {
+	width: 480px;
+}
+
 .clear
 {
 	clear:both;
@@ -26,22 +31,33 @@ header,nav,aside,article,section,footer,main {
 	float: right;
 	margin-top:47px;
 	font-family: Arial;
+	text-align:center;
+	color: #ffffff;
 }
+
+ul{
+	float:left;
+	list-style-type: none;
+}
+nav a{
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+	margin-top: 20px;
+}
+
 #logo1 {
 	width: 78px;
 	height: 78px;
 	background-image: url(../images/logo.png);
 	background-repeat: no-repeat;
-	background-position: center;
 	display:block;
 	margin-left:105px;
 }
 #Content1 {
 	position:relative;
-	top:269px;
-	width:878px;
-	height:223px;
-	margin-left:121px;
+	float:left;
+	margin-left:97px;
 }
 aside {
 	width: 121px;
@@ -49,11 +65,11 @@ aside {
 	float: left;
 	background-color: #f2dede;
 }
-section {
-	position:absolute ;
+.L1Boxes {
+	position:relative ;
 	width:849px ;
 	height:269px;
-	margin-left:151px;
+	margin-left:29px;
 	background-color: #ee5f5b;
 	float:left;
 }
@@ -62,26 +78,14 @@ section {
 	height: 120px;
 	background-color: #d6d6d6;
 }
-.list1 {
-	list-style-type: none;
-	overflow: hidden;
-	background-color: #b94a48;
-}
-.list1 li {
+.list {
+	float:left;
 	width:242px;
-	height:58px;
-	float: left;
-	text-align:center;
-	color: #ffffff;
-}
-.list1 li a {
-	padding-top:20px;
-	display: block;
-	color: #ffffff;
-	text-align: center;
-	text-decoration: none;
+	height:57px;
 }
 .selected {
+	float:left;
+	width:242px;
 	height:58px;
 	background-color:#333333;
 }
@@ -117,6 +121,7 @@ article {
 	background-color: #333333;
 	float: left;
 	font-family: Arial;
+	color: #ffffff;
 }
 #logo2 {
 	margin: 0px auto;
@@ -124,33 +129,18 @@ article {
 	height: 78px;
 	background-image: url(../images/logo.png);
 	background-repeat: no-repeat;
-	background-position: center;
 	padding-top:38px;
 	display:block;
 }
-.list2  {
-	list-style-type: none;
-	background-color: #333333;
-}
-.list2 li a {
-	display: block;
-	color: #ffffff;
-	text-decoration: none;
-	padding-top: 20px;
-}
-.list2 li {
-	color: #ffffff;
-	text-align: left;
-	width:244px;
-	height:59px;
-}
+
 .selected2 {
-	height:40px;
+	float:left;
+	width:242px;
+	height:57px;
 	background-color:#b94a48;
 }
 #Content2 {
-	position:relative;
-	left:244px;
+	float:right;
 	width:756px;
 	height:756px;
 	background-color:#ee5f5b;
@@ -165,29 +155,110 @@ article {
 /* ---------------- boxes ------------- */
 
 #L2box1 {
-	left:32px;
+	margin-left:30px;
 	width:212px;
 	height:366px;
 }
 #L2box2 {
-	top:384px;
-	left:32px;
+	margin-top:384px;
+	margin-left:32px;
 	width:212px;
 	height:373px;
 }
 #L2box3 {
-	left:274px;
+	margin-left:274px;
 	width:215px;
 	height:560px;
 }
 #L2box4 {
-	top:577px;
-	left:274px;
+	margin-left:274px;
+	margin-top:577px;
 	width:215px;
 	height:178px;
 }
 #L2box5 {
-	left:515px;
+	margin-left:515px;
 	width:213px;
 	height:223px;
+}
+
+/* ------------ layout3 ------------ */
+
+#Header3 {
+	width:500px;
+	height:500px;
+	position: relative;
+	float:left;
+}
+#wrapper3 {
+	margin: 0px auto;
+	width: 1000px;
+	height: 1000px;
+}
+#logo3 {
+	position: absolute;
+	top:20px;
+	width: 78px;
+	height: 78px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	margin-left:5px;
+}
+.MainMenu3 {
+	color: #ffffff;
+	width:500px;
+	height:63px;
+	float:left;
+	margin-top:47px;
+	background-color: #b94a48;
+	font-family: Arial;
+	text-align: center;
+	position: absolute;
+	top:390px;
+}
+.list3 {
+	float:left;
+	width:166.5px;
+	height:63px;
+}
+.selected3 {
+	float:left;
+	width:167px;
+	height:63px;
+	background-color:#333333;
+}
+#button {
+	position:absolute;
+	top:119px;
+	left:208px;
+	font-size: 150px;
+}
+#L3Boxes {
+	width:500px;
+	height:500px;
+	float:left;
+	background-color: #9d261d;
+}
+#DynamicBox {
+	overflow: hidden;
+	background-color: #9d261d;
+}
+@media only screen and (max-width:998px){
+	#DynamicBox {
+		height:1000px;
+	}
+	#L3Boxes {width:500px;}
+	#wrapper3 {
+		width:500px;
+		margin:0px auto;
+	}
+}
+@media only screen and (min-width:999px){
+	#DynamicBox {
+		height:500px;
+	}
+	#wrapper3 {
+		width:1000px;
+		margin:0px auto;
+	}
 }
